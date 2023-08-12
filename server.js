@@ -57,6 +57,7 @@ app.put('/orders/:orderId', (req, res) => {
   }
 });
 
-server.listen(3001, () => {
-  console.log('Server is listening on port 3001');
+port = process.env.PORT || 3001;
+server.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });
