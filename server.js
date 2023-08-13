@@ -57,6 +57,10 @@ app.put('/orders/:orderId', (req, res) => {
   }
 });
 
+app.get('/test', (req, res) => {
+  res.json('test');
+});
+
 port = process.env.PORT || 3001;
 server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
